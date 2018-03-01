@@ -10,7 +10,7 @@ export class ItemComponent {
   producto:any = undefined;
   cod:string=undefined;
 
-  constructor ( private route:ActivatedRoute
+  constructor ( private route:ActivatedRoute,
                 private _ps:ProductosService) {
     route.params.subscribe( parametros => {
       // console.log( parametros );
